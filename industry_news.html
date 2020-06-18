@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="u54dvKDtTqLUZxutCF8cPwurRihkMORtCIpKyVHI">
+        <title>RealtyScout</title>
+    <!-- Styles -->
+    <link rel="alternate" type="application/atom+xml" title="News" href="feed.html">
+    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="public-assets/css/bootstrap.css" rel="stylesheet">
+    <link href="public-assets/css/font-awesome.css" rel="stylesheet">
+    <link href="public-assets/css/flaticon.css" rel="stylesheet">
+    <link href="public-assets/css/slick-slider.css" rel="stylesheet">
+    <link href="public-assets/plugin-css/fancybox.css" rel="stylesheet">
+    <link href="public-assets/plugin-css/plugin.css" rel="stylesheet">
+    <link href="public-assets/css/color.css" rel="stylesheet">
+    <link href="public-assets/css/video.css" rel="stylesheet">
+    <link href="public-assets/css/algolia.css" rel="stylesheet">
+    <link href="public-assets/css/style.css" rel="stylesheet">
+    <link href="public-assets/css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=hebrew,latin-ext,vietnamese" rel="stylesheet">
+
+    <style type="text/css">
+        p {
+            word-break: break-all;
+        }
+        .careerfy-job-grid-wrap {
+            border: 1px solid #ececec;
+            overflow: hidden;
+            word-break: break-all;
+        }
+    </style>
+
+
+      <style type="text/css">
+    .active-btn {
+        border: 1px solid #13b5ea;
+        padding: 5px 10px;
+        text-align: center;
+        background: #13b5ea;
+        color: #fff;
+        background: #dd;
+    }
+    .active-btn.disable {
+        border: 1px solid red;
+        background: red;
+        color: #fff;
+    }
+
+    .modal-dialog {
+        margin: 0 auto;
+    }
+
+    button.close {
+        background: transparent !important;
+    }
+
+    .modal-body {
+        overflow: hidden;
+    }
+    .modal-body ul li {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 0;
+        font-size: 24px;
+        color: #000;
+    }
+
+    .modal-body ul li span {
+        width: 30%;
+        float: left;
+        text-align: right;
+        padding-right: 12px;
+    }
+
+    textarea.modal-textarea {
+        width: 70%;
+        padding: 11px;
+        height: 100px;
+        border: 3px solid #13b5ea;
+        /* background: #13b5ea; */
+        border-radius: 10px;
+    }
+
+    .show-error.text-center {
+        font-size: 32px;
+        color: red;
+        padding-bottom: 30px;
+    }
+
+
+    div#search-single span {
+        width: 100%;
+    }
+
+    input#aa-search-input2 {
+        background: transparent;
+        border: 1px solid #ddd;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .aa-dropdown-menu {
+        background: #f1f1f1;
+        }
+  </style>
+</head>
+<body>
+
+    <!-- blade query -->
+        <!-- Wrapper -->
+    <div class="careerfy-wrapper">
+
+        <!-- Header -->
+        <header id="careerfy-header" class="careerfy-header-four navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <aside class="col-md-2 col-sm-2 col-xs-6"> <a href="index.html" class="careerfy-logo"><img src="images/logo.png"alt=""></a> </aside>
+                    <aside class="col-md-7 col-sm-4 col-xs-6">
+                        <nav class="careerfy-navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#careerfy-navbar-collapse-1" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="careerfy-navbar-collapse-1">
+                                <ul class="navbar-nav">
+                                    <li class=""><a href="index.html">Home</a></li>
+                                    <li class="">
+                                        <a href="how-works-broker.html">Brokers & Hiring Managers</a>
+                                    </li>
+                                    <li class=""><a href="how-works-agent.html">Pre-Licensees & Agents</a></li>
+                                    <li><a href="http://www.realtyscout.theceshop.com/" target="_blank">Get Licensed</a></li>
+                                    <li class="active"><a href="industry_news.html">Industry News</a></li>
+                                    <li class=""><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                      </nav>
+                    </aside>
+                    <aside class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="careerfy-right">
+                            <ul class="careerfy-user-section">
+                                <li><a class="careerfy-color" href="register.html">Register</a></li>
+                                <li><a class="careerfy-color" href="login.html">Sign in</a></li>
+                            </ul>
+                            <a href="login.html" class="careerfy-simple-btn careerfy-bgcolor"><span> <i class="careerfy-icon careerfy-arrows-2"></i> Post Job</span></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+
+        
+    <!-- header banner -->
+    <div class="header-banner">
+        <div class="careerfy-subheader careerfy-subheader-with-bg">
+           <span class="careerfy-banner-transparent" style="background-color: rgba(30,49,66,0.81) !important;"></span>
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="careerfy-page-title">
+                       <h1>Industry news</h1>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="clearfix"></div>
+           <div class="careerfy-breadcrumb">
+              <ul>
+                 <li><a href="#">Home</a></li>
+                 <li class="active">Industry news</li>
+              </ul>
+           </div>
+        </div>
+    </div>
+
+    <!-- /. header banner --> 
+    
+    <!-- Main Content -->
+    <div class="careerfy-main-content">
+        
+        <!-- Main Section -->
+        <div class="careerfy-main-section careerfy-dashboard-fulltwo">
+            <div class="container">
+                <div class="row"> 
+					<div class="careerfy-column-8 careerfy-typo-wrap">
+                            <!-- JobGrid -->
+                        <div class="careerfy-job careerfy-job-grid">
+                            <ul class="careerfy-row"></ul>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="careerfy-pagination-blog">
+                        </div>
+                    </div>
+
+                    <aside class="careerfy-column-4 careerfy-typo-wrap">
+                            <form class="careerfy-search-filter">
+                                <div class="careerfy-search-filter-wrap careerfy-without-toggle">
+                                    <h2><a href="#">Search Post</a></h2>
+                                    <div class="careerfy-search-box">
+                                        <div id="search-single">
+                                            <input type="search" id="aa-search-input2" class="" placeholder="Search Blogs..." name="search" autocomplete="off" />
+                                            <i class="careerfy-icon careerfy-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                           	</form>
+                            <!-- Recent Blog -->
+                            <div class="careerfy-search-filter-wrap careerfy-search-filter-toggle">
+                                <h2><a href="#" class="careerfy-click-btn">Recent Blog</a></h2>
+                                <div class="careerfy-checkbox-toggle">
+                                    <ul class="careerfy-checkbox carrify-blog-cat">
+	                                	                                    </ul>
+                                    <a href="login.html" class="careerfy-seemore">+see more</a>
+                                </div>
+                            </div>
+                            <!-- End Recent Blog -->
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+        <!-- Main Section -->
+
+    </div>
+    <!-- Main Content -->
+        
+        <!-- Footer -->
+        <footer id="careerfy-footer" class="careerfy-footer-one">
+            <div class="container">
+                <!-- Footer Widget -->
+                <div class="careerfy-footer-widget">
+                    <div class="row">
+                        <aside class="widget col-md-4 widget_contact_info">
+                            <div class="widget_contact_wrap">
+                                <a class="careerfy-footer-logo" href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                        </aside>
+                        <aside class="widget col-md-3 widget_nav_manu">
+                            <div class="footer-widget-title"><h2>Quick Links</h2></div>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="jobs.html">Searh Job</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="widget col-md-3 widget_nav_manu">
+                            <div class="footer-widget-title"><h2>Agents/Candidates</h2></div>
+                            <ul>
+                                <li><a href="register-agent.html">Create a profile</a></li>
+                                <li><a href="how-works-agent.html">How it works</a></li>
+                                <li><a href="agent-faq.html">Agent FAQ</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="widget col-md-2 widget_nav_manu">
+                            <div class="footer-widget-title"><h2>Brokers/Employers</h2></div>
+                            <ul>
+                                <li><a href="login.html">Post a job</a></li>
+                                <li><a href="how-works-broker.html">How it works</a></li>
+                                <li><a href="broker-faq.html">Broker FAQ</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+                <!-- Footer Widget -->
+                <!-- CopyRight -->
+                <div class="careerfy-copyright">
+                    <p>Copyrights © 2018 All Rights Reserved by <a href="http://www.codeshaper.net/" target="_blank" class="careerfy-color">Codeshaper</a></p>
+                    <ul class="careerfy-social-network">
+                        <li><a target="_blank" href="https://www.facebook.com/RealtyScout/" class="careerfy-bgcolorhover fa fa-facebook"></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/realty-scout" class="careerfy-bgcolorhover fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <!-- CopyRight -->
+            </div>
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <!-- Wrapper -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="public-assets/script/jquery.js"></script>
+    <script src="public-assets/script/bootstrap.js"></script>
+    <script src="public-assets/script/slick-slider.js"></script>
+    <script src="public-assets/plugin-script/counter.js"></script>
+    <script src="public-assets/plugin-script/fancybox.pack.js"></script>
+    <script src="public-assets/plugin-script/isotope.min.js"></script>
+    <script src="public-assets/plugin-script/video.js"></script>
+    <script src="public-assets/plugin-script/progressbar.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA78tV7rTO62MUBscyt08AnZoRs_sQSxok&amp;libraries=places"></script>
+    <script src="public-assets/plugin-script/functions.js"></script>
+    <script src="public-assets/script/functions.js"></script>
+
+    <!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+    <script src="../cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="../cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+    <!-- Initialize autocomplete menu -->
+
+
+
+    <script>
+
+        var client = algoliasearch('1JVGQG2YJT', '8e2e436bb674b16cd2481d49e44fc1bb');
+        var index = client.initIndex('states');
+        //initialize autocomplete on search input (ID selector must match)
+        autocomplete('#aa-search-input',
+        { hint: false }, {
+            source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+            //value to be displayed in input control after user's suggestion selection
+            displayKey: 'name',
+            //hash of templates used when rendering dataset
+            templates: {
+                //'suggestion' templating function used to render a single suggestion
+                suggestion: function(suggestion) {
+                  return '<span>' +
+                    suggestion._highlightResult.name.value + '</span><span>';
+                }
+            }
+        }).on('autocomplete:selected', function (event, suggestion, dataset) {
+            window.location.href = window.location.origin + '/job-by-state/' + suggestion.name;
+            enterPressed = true;
+        }).on('keyup', function(event) {
+            if (event.keyCode == 13 && !enterPressed) {
+                window.location.href = window.location.origin + '/search-algolia?q=' + document.getElementById('aa-search-input').value;
+            }
+        });
+    </script>
+
+
+    
+    <script>
+        var client = algoliasearch('1JVGQG2YJT', '8e2e436bb674b16cd2481d49e44fc1bb');
+        var index = client.initIndex('blogs');
+        //initialize autocomplete on search input (ID selector must match)
+        autocomplete('#aa-search-input2',
+        { hint: false }, {
+            source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+            //value to be displayed in input control after user's suggestion selection
+            displayKey: 'title',
+            //hash of templates used when rendering dataset
+            templates: {
+                //'suggestion' templating function used to render a single suggestion
+                suggestion: function(suggestion) {
+                  return '<span>' +
+                    suggestion._highlightResult.title.value + '</span><span>';
+                },
+                empty: function (result) {
+                    return 'Sorry, we did not find any results for "' + result.query + '"';
+                }
+            }
+        }).on('autocomplete:selected', function (event, suggestion, dataset) {
+            window.location.href = window.location.origin + '/blog-single/' + suggestion.slug;
+            enterPressed = true;
+        }).on('keyup', function(event) {
+            if (event.keyCode == 13 && !enterPressed) {
+                window.location.href = window.location.origin + '/search-algolia?q=' + document.getElementById('aa-search-input2').value;
+            }
+        });
+    </script>
+</script>
+</body>
+</html>
+
+
